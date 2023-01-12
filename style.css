@@ -15,6 +15,9 @@ body{
     width: 100%;
     height:700px;
     background: url(crew.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: relative;
     overflow:hidden;
 }
@@ -30,7 +33,9 @@ body{
 
 .section{
     background: url(crew.jpeg);
-    background-size: cover;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     /* overflow:scroll; */
     height: 100%;
     width: 100%;
@@ -61,6 +66,13 @@ input{
     border: 2px solid #818181;
     padding-left: 20px;
 }
+input[type=text] {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
 
 .form-p{
     font-size: 12px;
@@ -230,7 +242,7 @@ p.reset{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     right: 30px;
     top: 60px;
-    z-index: 9;
+    z-index: 10;
   }
   
   .dropdown-content a {
@@ -267,6 +279,46 @@ p.reset{
   .dropdown1 a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+
+  .dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 140px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 40px;
+    top: 115px;
+    z-index: 9;
+  }
+  
+  .dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown3 a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  .dropdown3{
+    display: none;
+    float: right;
+    margin-top: 10px;
+    margin-right: 35px;
+  }
+  .btn-action{
+    width: 130px;
+    background: black;
+    border-radius: 10px;
+    border: none;
+    color: white;
+  }
+
 
 .user-img{
     width: 40px;
@@ -548,9 +600,7 @@ td input{
 }
 
 .add-row4{
-    position: relative;
-    /* float: right; */
-    left: 850px;
+    float: right;
     margin: 3px 37px 10px 0;
     background: transparent;
     border: none;
@@ -654,7 +704,6 @@ td input{
     align-items: center;
   }
 
-
   /*==========HELP==============*/
   .help{
     width: 50%;
@@ -679,7 +728,9 @@ td input{
     border-radius: 10px;
     line-height: 30px;
     margin-top: -30px;
-    margin-left: 450px;
+    /* margin-left: 450px; */
+    margin-right: 100px;
+    float: right;
     margin-bottom: 30px;
 }
 
@@ -701,30 +752,42 @@ td input{
 }
 
 .mail{
-    position: relative;
+    /* position: relative;
     left: 850px;
-    top: -60px;
+    top: -60px; */
     width: 160px;
     border-radius: 10px;
-    margin-right: 40px;
-    margin-top: -160px;
     background: black;
     color: white;
     text-align: center;
+    z-index: -10;
 }
 
 .cancel{
-    position: relative;
-    margin-right: 90px;
+    /* position: relative; */
     background: transparent;
     border: none;
     color: black;
-    left: 695px; 
-    top: -30px;
+    /* left: 695px; 
+    top: -30px; */
     font-weight: 600;
     font-size: 17px;
+    z-index: -10;
 }
 
+.send-options{
+    width: 250px;
+    float:right;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.hidden-line{
+    display: none;
+}
+.hidden-line2{
+    display: none;
+}
 .contacts td{
     text-align: left;
     font-size: 15px;
@@ -861,10 +924,38 @@ table label{
     }
 }
 
+@media (max-width:1266px){
+    .linkBox{
+        margin-right: 30px;
+    }
+}
+
+@media (max-width:1172px)
+{
+    .sheet-action{
+        width: 70%;
+    }
+}
+
+@media (max-width:1170px){
+    .linkBox{
+        margin-right: -15px;
+    }
+    .contacts-h2{
+        font-size: 25px;
+    }
+}
+
 @media (max-width:1020px)
 {
     .sheet-action{
         width: 80%;
+    }
+}
+
+@media (max-width:1000px){
+    .hidden-line{
+        display: block;
     }
 }
 
@@ -881,6 +972,12 @@ table label{
     {
         left: -20%;
     }
+
+    .dropdown-content2 {
+        left: 40px;
+        top: 190px;
+        z-index: 9;
+      }
     
     #navButton{
         display: block;
@@ -949,6 +1046,9 @@ table label{
     .help{
         width: 60%;
     }
+    .dropbtn{
+        margin-right: 10px;
+    }
 }
 
 @media (max-width:640px)
@@ -959,6 +1059,18 @@ table label{
     .help{
         width: 70%;
     }
+}
+
+@media (max-width:619px){
+  .send-options{
+    margin-top: 10px;
+    float: left;
+    text-align: left;
+  }
+  .linkBox{
+    margin-top: -95px;
+    float: left;
+  }
 }
 
 @media (max-width:610px){
@@ -983,6 +1095,18 @@ table label{
     .help{
         width: 80%;
     }
+    .tr-h3{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:577px){
+    .sheet-action{
+        display: none;
+    }
+    .dropdown3{
+        display: block;
+    }
 }
 @media (max-width:384px)
 {
@@ -1003,3 +1127,20 @@ table label{
     }
 }
 
+@media (max-width:345px){
+    .tr-h3{
+        font-size:20px;
+    }
+}
+
+@media (max-width:244px){
+    .tr-h3{
+        font-size:17px;
+    }
+}
+
+@media (max-width:230px){
+    .tr-h3{
+        font-size: 14px;
+    }
+}

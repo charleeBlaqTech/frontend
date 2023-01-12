@@ -13,7 +13,7 @@
 </head>
 <body>
     <section>
-            <div class="top-right"><span class="tr-h3">FILM CALLSHEET</span><div class="dropdown"><button onclick="myFunction()" class="dropbtn"></button>
+            <div class="top-right"><span class="tr-h3"><a href="userlanding.html" style="color: white; text-decoration: none;">FILM CALLSHEET</a></span><div class="dropdown"><button onclick="myFunction()" class="dropbtn"></button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="account.html">Account</a>
                     <a href="login.html">Log out</a>
@@ -35,12 +35,17 @@
             <p class="footer">Powered by<br>Budget camera studio Inc.</p>
             </div>
             <div class="bottom-right" id="bottomRight">
-                <h2>Select contacts</h2>
+                <h2 class="contacts-h2">Select contacts</h2>
+                <br class="hidden-line">
+                <div class="send-options">
+                <button class="mail">Send to email</button><br>
+                <button class="cancel">Cancel</button></div>
+                <br class="hidden-line2">
                 <div class="linkBox"><span class="link">https://filmcallsheet.com/FK4YusHIIj0</span>
                     <div class="copy">Copy link</div>
                 </div>
-                <button class="mail">Send to email</button>
-                <button class="cancel">Cancel</button>
+                <div class="sheet">
+                    <form>
                 <table style="border: none;" class="contacts">
                     <tr style="border-bottom: 2px solid black;">
                         <td style="width: 10px;"></td>
@@ -78,7 +83,9 @@
                         <td>bm1234@gmail.com</td>
                     </tr>
                 </table>
-                <button type="button" class="add-row4"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add new contact</button>
+                    </form>
+                </div>
+                <button type="button" onclick="addrow4()" class="add-row4"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add new contact</button>
                 </div>
             </div>
     </section>

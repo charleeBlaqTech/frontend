@@ -13,7 +13,7 @@
 </head>
 <body>
     <section>
-            <div class="top-right"><span class="tr-h3">FILM CALLSHEET</span><div class="login-signup"><a href="login.html">Login</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="signup.html">Sign Up</a></div></div>
+            <div class="top-right"><span class="tr-h3"><a href="index.html" style="color: white; text-decoration: none;">FILM CALLSHEET</a></span><div class="login-signup"><a href="login.html">Login</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="signup.html">Sign Up</a></div></div>
             <button id="navButton" onclick="sidebar()">
                 <div class="hamburger-menu">
                     <div class="line"></div>
@@ -42,263 +42,263 @@
                     <div><button type="button" class="btn-dow"><i class="fa-solid fa-download"></i> Download</button></div>
                 </div><br><br><br>
                 <div class="sheet">
-            <form>
-                        <table border="0">
-                            <tr>
-                                <td>Executive Producer:</td>
-                                <td><input type="text"></td>
-                                <td><input type="text" class="sub"></td>
-                                <td rowspan="5"><h3 align="center">PRODUCTION TITLE<br>Day 00 of 00</td>
-                                <td>Production Date</td>
-                                <td><input type="text"></td>
-                            </tr>
-                            <tr>
-                                <td>Producer:</td>
-                                <td><input type="text"></td>
-                                <td><input type="text" class="sub"></td>
-                                <td>Sunrise</td>
-                                <td><input type="text"></td>
-                            </tr>
-                            <tr>
-                                <td>Director:</td>
-                                <td><input type="text"></td>
-                                <td><input type="text" class="sub"></td>
-                                <td>Sunset</td>
-                                <td><input type="text"></td>
-                            </tr>
-                            <tr>
-                                <td>1st Assistant Director:</td>
-                                <td><input type="text"></td>
-                                <td><input type="text" class="sub"></td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Production Manager</td>
-                                <td><input type="text"></td>
-                                <td><input type="text" class="sub"></td>
-                                <td>Weather</td>
-                                <td><input type="text"></td>
-                            </tr>
+                    <form>
+                                <table border="0" class="table1">
+                                    <tr>
+                                        <td>Executive Producer:</td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text" class="sub"></td>
+                                        <td rowspan="5"><h3 align="center">PRODUCTION TITLE<br>Day 00 of 00</td>
+                                        <td>Production Date</td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Producer:</td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text" class="sub"></td>
+                                        <td>Sunrise</td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Director:</td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text" class="sub"></td>
+                                        <td>Sunset</td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1st Assistant Director:</td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text" class="sub"></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Production Manager</td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text" class="sub"></td>
+                                        <td>Weather</td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    </table>
+                                    <table border="0" class="table2" style="margin-top: 4px;">
+                                       <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;">
+                                        <td>CREW CALL TIME</td>
+                                        <td>TALENT CALL TIME</td>
+                                        <td>LUNCH TIME</td>
+                                        <td>WRAP TIME</td>
+                                       </tr>
+                                        <tr align="center">
+                                            <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                            <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                            <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                            <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                        </tr>
+                                    </table>
+                                    <table border="0" class="table3" style="margin-top: 4px;">
+                                    <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                                        <td style="width: 10px;">#</td>
+                                        <td style="width: 300px;">LOCATION</td>
+                                        <td style="width: 300px;">NEAREST HOSPITAL</td>
+                                       </tr>
+                                       <tr>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                       </tr>
+                                       <tr>
+                                        <td><input type="text" style="width: 20px;"></td>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                       </tr>
+                                    </table>
+                                    <button type="button" onclick="addrow()" class="add-row"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+                                    <table border="0" class="table4" style="margin-top: 8px;">
+                                       <tr style="height: 25px; width:100%; background-color: #121212; color:white; text-align:center;">
+                                        <td>PARKING / NOTES</td>
+                                        <tr>
+                                        <td><textarea type="text" style="width: 100%; height:70px;"></textarea></td>
+                                        </tr>
+                                    </tr>
+                                </table>
+                                <table border="0" class="table5" style="margin-top: 4px;">
+                                    <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                                        <td style="width: 50px;">#</td>
+                                        <td style="width: 180px;">SCENE AND DESCRIPTION</td>
+                                        <td style="width: 180px;">CAST</td>
+                                        <td>PAGES</td>
+                                        <td>D/N</td>
+                                        <td>LOCATION / NOTES</td>
+                                       </tr>
+                                    <tr>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" style="width: 100%;"></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                        <td><textarea style="width: 100%; height:50px;"></textarea></td>
+                                    </tr>
                             </table>
-                            <table border="0" class="table2" style="margin-top: 4px;">
-                               <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;">
-                                <td>CREW CALL TIME</td>
-                                <td>TALENT CALL TIME</td>
-                                <td>LUNCH TIME</td>
-                                <td>WRAP TIME</td>
-                               </tr>
-                                <tr align="center">
-                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
-                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
-                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
-                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
-                                </tr>
+                            <button type="button" onclick="addrow1()" class="add-row1"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+                            <table border="0" class="table6" style="margin-top: 4px;">
+                                <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                                    <td style="width: 50px;">#</td>
+                                    <td style="width: 180px;">CAST</td>
+                                    <td style="width: 180px;">CHARACTER</td>
+                                    <td>CALL TIME</td>
+                                    <td>SPECIAL INSTRUCTIONS</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
                             </table>
-                            <table border="0" class="table2" style="margin-top: 4px;">
-                            <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
-                                <td style="width: 10px;">#</td>
-                                <td style="width: 300px;">LOCATION</td>
-                                <td style="width: 300px;">NEAREST HOSPITAL</td>
-                               </tr>
-                               <tr>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><input type="text" style="width: 100%;"></td>
-                               </tr>
-                               <tr>
-                                <td><input type="text" style="width: 20px;"></td>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><input type="text" style="width: 100%;"></td>
-                               </tr>
+                            <button type="button" onclick="addrow2()" class="add-row2"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+                            <table border="0" class="table7" style="margin-top: 4px;">
+                                <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                                    <td style="width: 50px;">#</td>
+                                    <td style="width: 180px;">CREW POSITION</td>
+                                    <td style="width: 180px;">NAME</td>
+                                    <td>PHONE</td>
+                                    <td>EMAIL</td>
+                                    <td>CALL TIME</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="text" style="width: 20px;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                    <td><input type="text" style="width: 100%;"></td>
+                                   </tr>
                             </table>
-                            <button type="button" class="add-row1"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
-                            <table border="0" class="table2" style="margin-top: 8px;">
-                               <tr style="height: 25px; width:100%; background-color: #121212; color:white; text-align:center;">
-                                <td>PARKING / NOTES</td>
-                                <tr>
-                                <td><textarea type="text" style="width: 100%; height:70px;"></textarea></td>
-                                </tr>
-                            </tr>
-                        </table>
-                        <table border="0" class="table2" style="margin-top: 4px;">
-                            <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
-                                <td style="width: 20px;">#</td>
-                                <td style="width: 200px;">SCENE AND DESCRIPTION</td>
-                                <td style="width: 200px;">CAST</td>
-                                <td>PAGES</td>
-                                <td>D/N</td>
-                                <td>LOCATION / NOTES</td>
-                               </tr>
-                            <tr>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" style="width: 100%;"></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                                <td><textarea style="width: 100%; height:50px;"></textarea></td>
-                            </tr>
-                    </table>
-                    <button type="button" class="add-row1"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
-                    <table border="0" class="table2" style="margin-top: 4px;">
-                        <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
-                            <td style="width: 20px;">#</td>
-                            <td style="width: 200px;">CAST</td>
-                            <td style="width: 200px;">CHARACTER</td>
-                            <td>CALL TIME</td>
-                            <td>SPECIAL INSTRUCTIONS</td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                    </table>
-                    <button type="button" class="add-row1"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
-                    <table border="0" class="table2" style="margin-top: 4px;">
-                        <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
-                            <td style="width: 20px;">#</td>
-                            <td style="width: 200px;">CREW POSITION</td>
-                            <td style="width: 200px;">NAME</td>
-                            <td>PHONE</td>
-                            <td>EMAIL</td>
-                            <td>CALL TIME</td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                           <tr>
-                            <td><input type="text" style="width: 20px;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                            <td><input type="text" style="width: 100%;"></td>
-                           </tr>
-                    </table>
-                    <button type="button" class="add-row1"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
-                        </form>
-                </div>
+                            <button type="button" onclick="addrow3()" class="add-row3"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+                                </form>
+                                </div>
             </div>
     </section>
     <script src="script.js"></script>

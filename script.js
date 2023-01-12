@@ -57,6 +57,24 @@ window.onclick = function(event) {
   }
 }
 
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.btn-action')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 
 // Get the modal
 var modal = document.getElementById("popup");
@@ -163,3 +181,15 @@ function addrow4(){
   </tr>
   `;
 }
+
+function addrow4(){
+  const contacts = document.querySelector(".contacts");
+  contacts.innerHTML += `
+  <tr>
+    <td><label><input type="checkbox"></label></td>
+    <td>brain matt</td>
+    <td>bm1234@gmail.com</td>
+</tr>
+  `;
+}
+
