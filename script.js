@@ -124,6 +124,7 @@ function addrow(){
       <td><input type="text" style="width: 100%;"></td>
   </tr>
   `;
+  e.preventDefault();
 }
 
 
@@ -139,6 +140,7 @@ function addrow1(){
       <td><textarea style="width: 100%; height:50px;"></textarea></td>
   </tr>
   `;
+  e.preventDefault();
 }
 
 function addrow2(){
@@ -152,6 +154,7 @@ function addrow2(){
       <td><input type="text" style="width: 100%;"></td>
   </tr>
   `;
+  e.preventDefault();
 }
 
 function addrow3(){
@@ -166,6 +169,7 @@ function addrow3(){
       <td><input type="text" style="width: 100%;"></td>
   </tr>
   `;
+  e.preventDefault();
 }
 
 function addrow4(){
@@ -180,6 +184,7 @@ function addrow4(){
       <td><textarea style="width: 100%; height:50px;"></textarea></td>
   </tr>
   `;
+  e.preventDefault();
 }
 
 function addrow4(){
@@ -191,5 +196,6 @@ function addrow4(){
     <td>bm1234@gmail.com</td>
 </tr>
   `;
+  e.preventDefault();
 }
 

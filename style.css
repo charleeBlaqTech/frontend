@@ -74,6 +74,13 @@ input[type=text] {
     outline: none;
   }
 
+input[type=tel]{
+    /* outline: none; */
+    text-align: left;
+    padding-left: -50px;
+    margin-left: -20px;
+}
+
 .form-p{
     font-size: 12px;
     font-weight: 500;
@@ -191,8 +198,9 @@ p.reset{
 
 .bottom-right{
     width: 80%;
-    padding-top: 70px;
-    padding-left: 35px;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
     height:100%;
     float: right;
 }
@@ -357,7 +365,7 @@ p.reset{
     float: right;
     justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
    /* position: absolute;
   top: 70px; 
   left: 555px; */
@@ -522,7 +530,8 @@ margin-right: 20px;
 table{
     font-size: 12px;
     font-weight: 500;
-    width: 1000px;
+    width: 1030px;
+    overflow: scroll;
     line-height: 10px;
     margin: 5px;
     padding: 0;
@@ -535,7 +544,7 @@ table td{
     border: 2px solid black;
 }
 td input{
-    width: 200px;
+    /* width: 200px; */
     height: 20px;
     border: none;
     background: transparent;
