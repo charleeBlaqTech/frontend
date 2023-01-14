@@ -75,10 +75,14 @@ input[type=text] {
   }
 
 input[type=tel]{
-    /* outline: none; */
+     outline: none;
     text-align: left;
     padding-left: -50px;
     margin-left: -20px;
+}
+
+textarea{
+    outline: none;
 }
 
 .form-p{
@@ -525,6 +529,7 @@ margin-right: 20px;
 
  form{
     width: 100%;
+    margin: auto;
 } 
 
 table{
@@ -533,7 +538,8 @@ table{
     width: 1030px;
     overflow: scroll;
     line-height: 10px;
-    margin: 5px;
+    /* margin: 5px; */
+    margin: auto;
     padding: 0;
     align-items: center;
     text-align: center; 
@@ -955,6 +961,13 @@ table label{
     }
 }
 
+
+@media (max-width:1153px){
+    .popup-content{
+        width: 35%;
+    }
+}
+
 @media (max-width:1020px)
 {
     .sheet-action{
@@ -965,6 +978,12 @@ table label{
 @media (max-width:1000px){
     .hidden-line{
         display: block;
+    }
+}
+
+@media (max-width:950px){
+    .popup-content{
+        width: 45%;
     }
 }
 
@@ -1058,6 +1077,9 @@ table label{
     .dropbtn{
         margin-right: 10px;
     }
+    .popup-content{
+        width: 55%;
+    }
 }
 
 @media (max-width:640px)
@@ -1107,6 +1129,9 @@ table label{
     .tr-h3{
         font-size: 25px;
     }
+    .popup-content{
+        width: 65%;
+    }
 }
 
 @media (max-width:577px){
@@ -1117,6 +1142,24 @@ table label{
         display: block;
     }
 }
+
+
+@media (max-width:400px){
+    .login-signup{
+        font-size: 15px;
+    }
+    .tr-h3{
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width:410px){
+    .popup-content{
+        width: 90%;
+    }
+}
+
 @media (max-width:384px)
 {
     .login-form
@@ -1134,17 +1177,30 @@ table label{
     {
         width: 100%;
     }
+    .popup-content{
+        width: 95%;
+    }
+    .help{
+        width: 95%;
+    }
 }
 
-@media (max-width:345px){
+@media (max-width:280px){
+    .login-signup{
+        font-size: 13px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:350px){
     .tr-h3{
-        font-size:20px;
+        font-size:17px;
     }
 }
 
 @media (max-width:244px){
     .tr-h3{
-        font-size:17px;
+        font-size:15px;
     }
 }
 
