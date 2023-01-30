@@ -1,0 +1,287 @@
+
+                    
+                        <table border="0" class="table1" id="teble1">
+                            <tr>
+                                <td contenteditable="true">Executive Producer:</td>
+                                <td><input type="text" style="font-size: 15px;" name="EfirstName"></td>
+                                <td><input type="text" style="font-size: 15px;" class="sub" name="ElasttName"></td>
+                                <td rowspan="5" style="text-align: center;"  contenteditable="true"><h2 align="center">PRODUCTION<br> TITLE</h2><br><h3 align="center">Day <input type="tel" value="00" maxlength="2" style="width: 80px; height: 30px; text-indent:0;"> <span style="margin-left: -30px;">of</span> <input type="tel" value="00" maxlength="2" style="width: 80px; height: 30px; text-indent:0;"></td>
+                                <td>Production Date</td>
+                                <td><input type="text" style="font-size: 15px;" name="productionDate"></td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">Producer:</td>
+                                <td><input type="text" style="font-size: 15px;" name="pfirstName"></td>
+                                <td><input type="text" style="font-size: 15px;" class="sub" name="plastName"></td>
+                                <td contenteditable="true">Sunrise</td>
+                                <td><input type="text" style="font-size: 15px;" name="sunrise"></td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">Director:</td>
+                                <td><input type="text" style="font-size: 15px;" name="DfirstName"></td>
+                                <td><input type="text" style="font-size: 15px;" class="sub" name="DlastName"></td>
+                                <td contenteditable="true">Sunset</td>
+                                <td><input type="text" style="font-size: 15px;" name="sunset"></td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">1st Assistant Director:</td>
+                                <td><input type="text" style="font-size: 15px;" name="asstDfirstName"></td>
+                                <td><input type="text" style="font-size: 15px;" class="sub" name="asstDlastName"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">Production Manager</td>
+                                <td><input type="text" style="font-size: 15px;" name="MfirstName"></td>
+                                <td><input type="text" style="font-size: 15px;" class="sub" name="MlastName"></td>
+                                <td contenteditable="true">Weather</td>
+                                <td><input type="text" style="font-size: 15px;" name="weather"></td>
+                            </tr>
+                            </table>
+   
+                            <table border="0" class="table2" style="margin-top: 4px;">
+                               <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;">
+                                <td contenteditable="true">CREW CALL TIME</td>
+                                <td contenteditable="true">TALENT CALL TIME</td>
+                                <td contenteditable="true">LUNCH TIME</td>
+                                <td contenteditable="true">WRAP TIME</td>
+                               </tr>
+                                <tr align="center">
+                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                    <td><input type="text" class="cct" style="height:45px; width:220px;" value="8:00 AM"></td>
+                                </tr>
+                            </table>
+                            <table border="0" class="table3" id="table3" style="margin-top: 4px;">
+                            <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                                <td style="width: 10px;">#</td>
+                                <td style="width: 300px;" contenteditable="true">LOCATION</td>
+                                <td style="width: 300px;" contenteditable="true">NEAREST HOSPITAL</td>
+                                <td style="width: 10px;"></td>
+                               </tr>
+                               <tr>
+                                <td><input type="text" style="width: 20px; font-size: 15px;" name="locationId1"></td>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="locationLocation1"></td>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="locationHospital1"></td>
+                                <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                               </tr>
+                               <tr>
+                                <td><input type="text" style="width: 20px; font-size: 15px;" name="locationId2"></td>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="locationLocation2"></td>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="locationHospital2"></td>
+                                <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                               </tr>
+                            </table>
+                            <button type="button" onclick="addrow()" class="add-row"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+                        
+                            <table border="0" class="table4" style="margin-top: 8px;">
+                               <tr style="height: 25px; width:100%; background-color: #121212; color:white; text-align:center;">
+                                <td contenteditable="true">PARKING / NOTES</td>
+                                <tr>
+                                <td><textarea type="text" style="width: 100%; height:70px; font-size: 15px;" name="parkingNote"></textarea></td>
+                                </tr>
+                            </tr>
+                        </table>
+                        <table border="0" class="table5" id="table5" style="margin-top: 4px;">
+                            <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                                <td style="width: 50px;">#</td>
+                                <td style="width: 180px;" contenteditable="true">SCENE AND DESCRIPTION</td>
+                                <td style="width: 180px;" contenteditable="true">CAST</td>
+                                <td contenteditable="true">PAGES</td>
+                                <td contenteditable="true">D/N</td>
+                                <td contenteditable="true">LOCATION / NOTES</td>
+                                <td style="width: 10px;"></td>
+                               </tr>
+                            <tr>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="sceneId1"></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDescription1"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneCast1"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="scenePage1"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDN1"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneNote1"></textarea></td>
+                                <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="sceneId2"></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDescription2"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneCast2"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="scenePage2"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDN2"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneNote2"></textarea></td>
+                                <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="sceneId3"></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDescription3"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneCast3"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="scenePage3"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDN3"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneNote3"></textarea></td>
+                                <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="sceneId4"></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDescription4"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneCast4"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="scenePage4"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDN4"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneNote4"></textarea></td>
+                                <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width: 100%; font-size: 15px;" name="sceneId5"></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDescription5"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneCast5"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="scenePage5"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneDN5"></textarea></td>
+                                <td><textarea style="width: 100%; height:50px; font-size: 15px;" name="sceneNote5"></textarea></td>
+                                <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                    </table>
+                    <button type="button" onclick="addrow1()" class="add-row1"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+                    <table border="0" class="table6" id="table6" style="margin-top: 4px;">
+                        <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                            <td style="width: 50px;">#</td>
+                            <td style="width: 180px;" contenteditable="true">CAST</td>
+                            <td style="width: 180px;" contenteditable="true">CHARACTER</td>
+                            <td contenteditable="true">CALL TIME</td>
+                            <td contenteditable="true">SPECIAL INSTRUCTIONS</td>
+                            <td style="width:10px;"></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="castId1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCasts1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCharacter1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCallTime1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castInstruction1"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="castId2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCasts2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCharacter2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCallTime2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castInstruction2"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="castId3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCasts3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCharacter3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCallTime3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castInstruction3"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="castId4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCasts4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCharacter4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCallTime4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castInstruction4"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="castId5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCasts5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCharacter5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCallTime5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castInstruction5"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="castId6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCasts6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCharacter6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCallTime6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castInstruction6"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="castId7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCasts7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCharacter7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castCallTime7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="castInstruction7"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                    </table>
+                    <button type="button" onclick="addrow2()" class="add-row2"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+                    <table border="0" class="table7" id="table7" style="margin-top: 4px;">
+                        <tr style="height: 25px; width:50px; background-color: #121212; color:white; text-align:center;"> 
+                            <td style="width: 50px;">#</td>
+                            <td style="width: 180px;" contenteditable="true">CREW POSITION</td>
+                            <td style="width: 180px;" contenteditable="true">NAME</td>
+                            <td contenteditable="true">PHONE</td>
+                            <td contenteditable="true">EMAIL</td>
+                            <td contenteditable="true">CALL TIME</td>
+                            <td style="width: 10px;"></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="crewId1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewPosition1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewName1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewNumber1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewEmail1"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewCall1"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="crewId2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewPosition2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewName2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewNumber2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewEmail2"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewCall2"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="crewId3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewPosition3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewName3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewNumber3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewEmail3"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewCall3"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="crewId4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewPosition4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewName4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewNumber4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewEmail4"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewCall4"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="crewId5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewPosition5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewName5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewNumber5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewEmail5"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewCall5"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="crewId6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewPosition6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewName6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewNumber6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewEmail6"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewCall6"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                           <tr>
+                            <td><input type="text" style="width: 20px; font-size: 15px;" name="crewId7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewPosition7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewName7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewNumber7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewEmail7"></td>
+                            <td><input type="text" style="width: 100%; font-size: 15px;" name="crewCall7"></td>
+                            <td><button class="delete-row" id="deleterow" type="button"><i class="fa-solid fa-trash"></i></button></td>
+                           </tr>
+                    </table>
+                    <button type="button" onclick="addrow3()" class="add-row3"><i class="fa-solid fa-plus" style="padding-right: 8px;"></i>Add row</button>
+     </form> 
+             </div>
+        </div>
+    </section>
