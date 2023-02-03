@@ -5,10 +5,11 @@ const dotenv                =require('dotenv').config()
 const mongoose              =require('mongoose')
 const fileUpload            =require('express-fileupload')
 const cookieParser          =require("cookie-parser")
-
 const home=require('./routes/homeRoutes')
+
+
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.MONGO_DB_CONNECT);
+mongoose.connect( "mongodb://localhost:27017/film_callDB");
 
 
 

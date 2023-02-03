@@ -23,7 +23,7 @@ const loginPost= async (req,res)=>{
     const {email,password}=req.body
     const userFound= await user.findOne({email:email})
     if(!userFound){
-        res.render('login',{ERROR: "the email entered is not found."})
+        res.redirect('/login')
     }else{
         const userPassword=userFound.password
         const confirmedPassword= await bcrypt.compareSync(password, userPassword)
@@ -35,7 +35,7 @@ const loginPost= async (req,res)=>{
             res.cookie("auth", token,{maxAge:360000})
             res.render('index',{userFound})
         }else{
-            res.render('login',{ERROR:"email and password mismatched."})
+            res.redirect('/login')
         }
     }
 }
