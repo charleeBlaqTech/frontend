@@ -55,31 +55,4 @@ router.get('/send',(req,res)=>{
 
 
 
-
-
-router.get('/form-download/:id', async(req, res)=>{
-    const {id}=req.params
-    const formData = await sheet.findOne({_id:id});
-
-    const doc = new pdfkit();
-    doc.pipe(fs.createWriteStream("callsheet.pdf"));
-
-    doc.font("Helvetica-Bold").text(`Production Title: ${formData.projectTitle}`,{
-        paragraphGap:10,
-        indent:20,
-        align:"left"
-    });
-    doc.font("Helvetica").text(`Parking Note: ${formData.weather}`,{
-        paragraphGap:10,
-        indent:20,
-        align:"left"
-    });
-
-
-
-    doc.end()
-
-})
-
-
 module.exports= router
