@@ -26,6 +26,7 @@
     "express-fileupload": "^1.4.0",
     "express-handlebars": "^6.0.6",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^6.8.3"
+    "mongoose": "^6.8.3",
+    "pdfkit": "^0.13.0"
   }
 }

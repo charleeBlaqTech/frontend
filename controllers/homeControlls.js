@@ -9,6 +9,10 @@ const sheet                 =require('../models/sheetModel')
 const homeGet= (req,res)=>{
     res.render("index")
 }
+const homeGetBack= async(req,res)=>{
+    const userFound= await req.user
+    res.render("index",{userFound})
+}
 
 const logoutGet=async(req,res)=>{
     await res.cookie("auth", "",{maxAge:10})
@@ -66,6 +70,7 @@ const registerPost= async(req,res)=>{
 
 const sheetPost=async(req,res)=>{
    try {
+    const userFound= req.user
     const formData=req.body
     const newSheet=await sheet.create({
         projectTitle:formData.title,
@@ -258,7 +263,7 @@ const sheetPost=async(req,res)=>{
                 ]
            }
     })
-    res.redirect("/")
+    res.render("index",{userFound})
    } catch (error) {
     res.status(404).json({message:error.message})
    }
@@ -319,6 +324,21 @@ const profileUpdatePassword= async(req,res)=>{
     }
  }
 
+const passwordResetPageGet= (req,res)=>{
+    res.render("passwordreset",{layout:"others"}) 
+}
+const passwordResetPagePost= async (req,res)=>{
+    try {
+        const {upDatePassword,upDateEmail}=req.body
+        const currentUserDetails= await user.findOne({email:upDateEmail})
+        currentUserDetails.password=upDatePassword
+        currentUserDetails.save()
+        res.redirect("/login")
+    } catch (error) {
+        res.status(404).json({message:error.message})
+    } 
+}
+
 const deleteAccount=async(req,res)=>{
     const accountId= req.params.id
     await user.deleteOne({_id:accountId})
@@ -326,17 +346,19 @@ const deleteAccount=async(req,res)=>{
 }
 
 const sheetsGet=async(req,res)=>{
+    const userFound= await req.user
     const allSheets= await sheet.find({})
     
-    res.render("projects",{allSheets})
+    res.render("projects",{allSheets,userFound})
 }
 
 const sheetShow=async(req,res)=>{
     try {
+    const userFound= await req.user
      const sheetId=req.params.id
      const getOneSheet= await sheet.findOne({_id:sheetId})
  
-     res.render("userlanding", {getOneSheet})
+     res.render("userlanding", {getOneSheet, userFound})
     } catch (error) {
      res.status(401).json({message:error.message})
     }
@@ -344,4 +366,4 @@ const sheetShow=async(req,res)=>{
 
 
 
-module.exports={loginGet,loginPost,registerGet,registerPost,sheetPost,homeGet,profileGet,profileUpdateEmail,profileUpdatePassword,deleteAccount,logoutGet,sheetsGet,sheetShow}
+module.exports={loginGet,loginPost,registerGet,registerPost,sheetPost,homeGet,profileGet,profileUpdateEmail,profileUpdatePassword,deleteAccount,logoutGet,sheetsGet,sheetShow,passwordResetPageGet,passwordResetPagePost,homeGetBack}

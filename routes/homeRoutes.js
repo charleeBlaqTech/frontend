@@ -6,11 +6,15 @@ const isLoggedIn            =require('../middlewares/isLoggedIn');
 const user                  =require('../models/userModel')
 const sheet                 =require('../models/sheetModel')
 const homeController        =require('../controllers/homeControlls')
+const pdfkit                =require("pdfkit");
+const fs =require('fs');
 
 
 
 
 router.get('/',homeController.homeGet)
+
+router.get('/home',isLoggedIn, homeController.homeGetBack)
 
 router.get('/logout',homeController.logoutGet)
 
@@ -34,6 +38,10 @@ router.post('/profile-update-email',isLoggedIn, homeController.profileUpdateEmai
 
 router.post('/profile-update-password',isLoggedIn, homeController.profileUpdatePassword)
 
+router.get('/password-reset-get', homeController.passwordResetPageGet)
+router.post('/password-reset-post', homeController.passwordResetPagePost)
+
+
 router.post("/delete-account/:id",isLoggedIn,homeController.deleteAccount)
 
 
@@ -43,6 +51,34 @@ router.get('/help',(req,res)=>{
 
 router.get('/send',(req,res)=>{
     res.render("send")
+})
+
+
+
+
+
+router.get('/form-download/:id', async(req, res)=>{
+    const {id}=req.params
+    const formData = await sheet.findOne({_id:id});
+
+    const doc = new pdfkit();
+    doc.pipe(fs.createWriteStream("callsheet.pdf"));
+
+    doc.font("Helvetica-Bold").text(`Production Title: ${formData.projectTitle}`,{
+        paragraphGap:10,
+        indent:20,
+        align:"left"
+    });
+    doc.font("Helvetica").text(`Parking Note: ${formData.weather}`,{
+        paragraphGap:10,
+        indent:20,
+        align:"left"
+    });
+
+
+
+    doc.end()
+
 })
 
 

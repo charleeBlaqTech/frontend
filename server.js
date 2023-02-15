@@ -40,7 +40,7 @@ app.set("view engine", "hbs")
 
 
 // APP ROUTES
-app.use(home)
+app.use("/",home)
 
 
 app.listen(process.env.PORT || 1500)

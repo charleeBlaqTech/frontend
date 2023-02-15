@@ -14,14 +14,15 @@
 <body>
     <section>
         {{#if userFound}}
-         <div class="top-right"><span class="tr-h3"><a href="userlanding.html" style="color: white; text-decoration: none;">FILM CALLSHEET</a></span><div class="dropdown"><button onclick="myFunction()" class="dropbtn"></button>
+         <div class="top-right"><span class="tr-h3"><a href="/" style="color: white; text-decoration: none;">FILM CALLSHEET</a></span><div class="dropdown"><button onclick="myFunction()" class="dropbtn"></button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="/profile">Account</a>
                     <a href="/logout">Log out</a>
+                    <a href="/home">Home</a>
                 </div>
         </div></div>
         {{else}}
-            <div class="top-right"><span class="tr-h3"><a href="index.html" style="color: white; text-decoration: none;">FILM CALLSHEET</a></span><div class="login-signup"><a href="/login">Login</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/register">Sign Up</a></div></div>
+            <div class="top-right"><span class="tr-h3"><a href="/" style="color: white; text-decoration: none;">FILM CALLSHEET</a></span><div class="login-signup"><a href="/login">Login</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/register">Sign Up</a></div></div>
             <button id="navButton" onclick="sidebar()">
                 <div class="hamburger-menu">
                     <div class="line"></div>
@@ -34,18 +35,18 @@
            
             <div class="bottom-left" id="bottomLeft">
                 <button id="closeBtn" onclick="sidebarClose()">X</button>
-                <div class="cre"><button align="center" type="submit" class="btn-cre"><a href="/login" style="color: white; text-decoration: none;"><i class="fa-solid fa-plus" style="padding-right: 15px;"></i> Create</a></button></div>
+                <div class="cre"><button align="center" type="submit" class="btn-cre"><i class="fa-solid fa-plus" style="padding-right: 15px;"></i> Create</button></div>
                 <div class="pro"><button type="button" class="btn-pro"><a href="/sheets-get" style="color: white; text-decoration: none;"><i class="fa-solid fa-folder" style="padding-right: 15px;"></i> Projects</a></button></div>
                 <button type="button" class="btn-upg"><i class="fa-solid fa-upload" style="padding-right: 15px;"></i> Upgrade</button><br>
-                <button type="button" class="btn-hel"><a href="login.html" style="text-decoration: none; color: white;"><i class="fa-solid fa-circle-question" style="padding-right: 15px;"></i> Help</a></button>
+                <button type="button" class="btn-hel"><a href="/login" style="text-decoration: none; color: white;"><i class="fa-solid fa-circle-question" style="padding-right: 15px;"></i> Help</a></button>
                 <p class="footer"><a href="https://www.budgetcamera.ca" style="color: white; text-decoration: none;">Powered by<br>Budget camera studio Inc.</a></p>
                 </div>
             <div class="bottom-right">
-                <span style="float: left;" class="projectName">Project Name: <span class="pName" contenteditable="true"><input type="text" name="title" id=""></span> &nbsp;<i class="fa-solid fa-pencil"></i></span>
+                <span style="float: left;" class="projectName">Project Name: <span class="pName" contenteditable="true"><input type="text" name="title" id="projectTitle" value="{{getOneSheet.projectTitle}}"></span> &nbsp;<i class="fa-solid fa-pencil"></i></span>
                 <div class="dropdown3"><button onclick="myFunction3()" class="btn-action">Choose Action</button>
                     <div id="myDropdown3" class="dropdown-content3">
                         <a href="#"><i class="fa-solid fa-download"></i> Download</a>
-                        <a href="send.html"><i class="fa-solid fa-paper-plane"></i> Send</a>
+                        <a href="#"><i class="fa-solid fa-paper-plane"></i> Send</a>
                         <a href="#"><i class="fa-solid fa-clone"></i> Duplicate</a>
                         <a href="#"><i class="fa-solid fa-trash"></i> Delete</a>
                     </div>
@@ -58,7 +59,7 @@
                     </div>
                     <!-- <div><button type="button" class="btn-del"><i class="fa-solid fa-trash"></i> Delete</button></div> -->
                     <div><button type="button" class="btn-dul"><i class="fa-solid fa-clone"></i> Duplicate</button></div>
-                    <div><button type="button" class="btn-sen"><a href="login.html" style="color: white; text-decoration: none;"><i class="fa-solid fa-paper-plane"></i> Send</a></button></div>
-                    <div><button type="button" class="btn-dow"><i class="fa-solid fa-download"></i> Download</button></div>
+                    <div><button type="button" class="btn-sen"><a href="/login" style="color: white; text-decoration: none;"><i class="fa-solid fa-paper-plane"></i> Send</a></button></div>
+                    <div><button type="button" class="btn-dow" id="btn-dow"><a href="/form-download/{{getOneSheet._id}}"><i class="fa-solid fa-download"></i> Download</a></button></div>
                 </div><br><br><br>
                 <div class="sheet">

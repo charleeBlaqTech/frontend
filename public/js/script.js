@@ -246,3 +246,31 @@ $(document).ready(function() {
 //     }
 //   };
 // }
+
+document.getElementById("btn-dow").addEventListener("click",()=>{
+  const formData= {
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+    productionTitle: document.getElementById("projectTitle").value,
+  }
+})
+
+
+
+
+
+
+
