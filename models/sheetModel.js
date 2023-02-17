@@ -7,6 +7,18 @@ const sheetSchema= new Schema({
     projectTitle:{
         type:String
     },
+    crewCallTime:{
+        type:String
+    },
+    talentCallTime:{
+        type:String
+    },
+    wrapCallTime:{
+        type:String
+    },
+    lunchCallTime:{
+        type:String
+    },
     executiveProducer:{
         firstName:String,
         lastName:String

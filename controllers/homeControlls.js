@@ -74,6 +74,10 @@ const sheetPost=async(req,res)=>{
     const formData=req.body
     const newSheet=await sheet.create({
         projectTitle:formData.title,
+        crewCallTime:formData.crewCallTime,
+        talentCallTime:formData.talentCallTime,
+        wrapCallTime:formData.wrapCallTime,
+        lunchCallTime:formData.lunchCallTime,
         executiveProducer:{
             firstName:formData.EfirstName,
             lastName:formData.ElasttName
@@ -354,7 +358,7 @@ const sheetsGet=async(req,res)=>{
 
 const sheetShow=async(req,res)=>{
     try {
-    const userFound= await req.user
+    const userFound= req.user
      const sheetId=req.params.id
      const getOneSheet= await sheet.findOne({_id:sheetId})
  
