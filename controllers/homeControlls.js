@@ -267,7 +267,7 @@ const sheetPost=async(req,res)=>{
                 ]
            }
     })
-    res.render("index",{userFound})
+    res.redirect("/home")
    } catch (error) {
     res.status(404).json({message:error.message})
    }
@@ -360,9 +360,19 @@ const sheetShow=async(req,res)=>{
     try {
     const userFound= req.user
      const sheetId=req.params.id
-     const getOneSheet= await sheet.findOne({_id:sheetId})
- 
-     res.render("userlanding", {getOneSheet, userFound})
+     const getOneSheet= await sheet.findOne({_id:sheetId}).then((getOneSheet,userFound)=>{
+        res.render('userlanding',{getOneSheet,userFound})
+     })
+    } catch (error) {
+     res.status(401).json({message:error.message})
+    }
+ }
+const sheetDelete=async(req,res)=>{
+    try {
+     const userFound= req.user
+     const sheetId=req.params.id
+      await sheet.findOneAndDelete({_id:sheetId})
+     res.redirect("/home")
     } catch (error) {
      res.status(401).json({message:error.message})
     }
@@ -370,4 +380,4 @@ const sheetShow=async(req,res)=>{
 
 
 
-module.exports={loginGet,loginPost,registerGet,registerPost,sheetPost,homeGet,profileGet,profileUpdateEmail,profileUpdatePassword,deleteAccount,logoutGet,sheetsGet,sheetShow,passwordResetPageGet,passwordResetPagePost,homeGetBack}
+module.exports={loginGet,loginPost,registerGet,registerPost,sheetPost,homeGet,profileGet,profileUpdateEmail,profileUpdatePassword,deleteAccount,logoutGet,sheetsGet,sheetShow,passwordResetPageGet,passwordResetPagePost,homeGetBack,sheetDelete}

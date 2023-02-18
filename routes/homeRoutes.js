@@ -29,6 +29,7 @@ router.post('/register',homeController.registerPost)
 router.post('/create-film',homeController.sheetPost)
 
 router.get('/sheet/:id', homeController.sheetShow)
+router.get('/sheet/:id/delete',isLoggedIn, homeController.sheetDelete)
 
 router.get('/sheets-get',isLoggedIn,homeController.sheetsGet)
 

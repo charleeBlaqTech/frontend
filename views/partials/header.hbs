@@ -38,7 +38,7 @@
                 <div class="cre"><button align="center" type="submit" class="btn-cre"><i class="fa-solid fa-plus" style="padding-right: 15px;"></i> Create</button></div>
                 <div class="pro"><button type="button" class="btn-pro"><a href="/sheets-get" style="color: white; text-decoration: none;"><i class="fa-solid fa-folder" style="padding-right: 15px;"></i> Projects</a></button></div>
                 <button type="button" class="btn-upg"><i class="fa-solid fa-upload" style="padding-right: 15px;"></i> Upgrade</button><br>
-                <button type="button" class="btn-hel"><a href="/login" style="text-decoration: none; color: white;"><i class="fa-solid fa-circle-question" style="padding-right: 15px;"></i> Help</a></button>
+                <button type="button" class="btn-hel"><a href="#" style="text-decoration: none; color: white;"><i class="fa-solid fa-circle-question" style="padding-right: 15px;"></i> Help</a></button>
                 <p class="footer"><a href="https://www.budgetcamera.ca" style="color: white; text-decoration: none;">Powered by<br>Budget camera studio Inc.</a></p>
                 </div>
             <div class="bottom-right">
@@ -52,9 +52,9 @@
                     </div>
                 </div>
                 <div class="sheet-action">
-                    <div class="dropdown1"><button onclick="myFunction1()" class="btn-del"><i class="fa-solid fa-trash"></i> Delete</button>
+                    <div class="dropdown1"><a onclick="myFunction1()" class="btn-del"><i class="fa-solid fa-trash"></i> Delete</a>
                         <div id="myDropdown1" class="dropdown-content1">
-                            <a href="#">Confirm Delete</a>
+                            <a href="/sheet/{{getOneSheet._id}}/delete">Confirm Delete</a>
                         </div>
                     </div>
                     <!-- <div><button type="button" class="btn-del"><i class="fa-solid fa-trash"></i> Delete</button></div> -->
